@@ -10,3 +10,13 @@ sequelize
     .catch(err => {
         console.error('Unable to connect to the database:', err);
     });
+
+sequelize
+    .query("SELECT * FROM coins WHERE date = ?", {
+            raw: true,
+            replacements: ['1850'],
+            type: Sequelize.QueryTypes.SELECT
+        })
+    .then(myTableRows => {
+        console.log(JSON.stringify(myTableRows))
+      })

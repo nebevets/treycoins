@@ -6,6 +6,7 @@ module.exports = {
         host: 'host name here',
         port: <replace with port>,
         dialect: 'dialect here',
-        operatorsAliases: false
+        operatorsAliases: false,
+        logging: false;
     }
 }
