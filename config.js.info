@@ -1,0 +1,11 @@
+module.exports = {
+    database: 'database name here',
+    username: 'username here',
+    password: 'password here', 
+    hostConfig: {
+        host: 'host name here',
+        port: <replace with port>,
+        dialect: 'dialect here',
+        operatorsAliases: false
+    }
+}
